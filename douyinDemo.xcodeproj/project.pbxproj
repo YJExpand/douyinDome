@@ -13,6 +13,7 @@
 		2CB39D2422A2508D00E2612B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB39D2322A2508D00E2612B /* Assets.xcassets */; };
 		2CB39D2722A2508D00E2612B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB39D2522A2508D00E2612B /* LaunchScreen.storyboard */; };
 		2CB39D2A22A2508D00E2612B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB39D2922A2508D00E2612B /* main.m */; };
+		74C9104A12C7D079B9FA4AEC /* libPods-douyinDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BD3E8DE3FDBA765F3CC3C2 /* libPods-douyinDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		2CB39D2622A2508D00E2612B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB39D2822A2508D00E2612B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB39D2922A2508D00E2612B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5725DA71B4A87954C8604699 /* Pods-douyinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyinDemo.release.xcconfig"; path = "Target Support Files/Pods-douyinDemo/Pods-douyinDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8E2D601CEB41C76D09A2DD45 /* Pods-douyinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyinDemo.debug.xcconfig"; path = "Target Support Files/Pods-douyinDemo/Pods-douyinDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B3BD3E8DE3FDBA765F3CC3C2 /* libPods-douyinDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douyinDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C9104A12C7D079B9FA4AEC /* libPods-douyinDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				2CB39D1922A2507000E2612B /* douyinDemo */,
 				2CB39D1822A2507000E2612B /* Products */,
+				9AC3B49B69C054F1477F4574 /* Pods */,
+				7F6F3558ADF36CBEF8079FD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = douyinDemo;
 			sourceTree = "<group>";
 		};
+		7F6F3558ADF36CBEF8079FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3BD3E8DE3FDBA765F3CC3C2 /* libPods-douyinDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AC3B49B69C054F1477F4574 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E2D601CEB41C76D09A2DD45 /* Pods-douyinDemo.debug.xcconfig */,
+				5725DA71B4A87954C8604699 /* Pods-douyinDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CB39D2D22A2508D00E2612B /* Build configuration list for PBXNativeTarget "douyinDemo" */;
 			buildPhases = (
+				04E557439B61D4B618D0BC0F /* [CP] Check Pods Manifest.lock */,
 				2CB39D1322A2507000E2612B /* Sources */,
 				2CB39D1422A2507000E2612B /* Frameworks */,
 				2CB39D1522A2507000E2612B /* Resources */,
+				CD3C842CE1FAB15725FEE2B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E557439B61D4B618D0BC0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douyinDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3C842CE1FAB15725FEE2B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-douyinDemo/Pods-douyinDemo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-douyinDemo/Pods-douyinDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CB39D1322A2507000E2612B /* Sources */ = {
@@ -283,11 +356,12 @@
 		};
 		2CB39D2E22A2508D00E2612B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2D601CEB41C76D09A2DD45 /* Pods-douyinDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = douyinDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +374,12 @@
 		};
 		2CB39D2F22A2508D00E2612B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5725DA71B4A87954C8604699 /* Pods-douyinDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = douyinDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
