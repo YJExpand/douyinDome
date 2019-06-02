@@ -1,0 +1,16 @@
+//
+//  douyinDome.pch
+//  douyinDemo
+//
+//  Created by My-PC on 1/6/2019.
+//  Copyright © 2019 YJExpand. All rights reserved.
+//
+
+#ifndef douyinDome_pch
+#define douyinDome_pch
+
+#import "YJMacros.h"
+
+#import "YJColorHeader.h"
+
+#endif /* douyinDome_pch */

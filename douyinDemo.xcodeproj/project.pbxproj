@@ -7,26 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CB39D1C22A2507000E2612B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB39D1B22A2507000E2612B /* AppDelegate.m */; };
-		2CB39D1F22A2507000E2612B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB39D1E22A2507000E2612B /* ViewController.m */; };
-		2CB39D2222A2507000E2612B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB39D2022A2507000E2612B /* Main.storyboard */; };
-		2CB39D2422A2508D00E2612B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB39D2322A2508D00E2612B /* Assets.xcassets */; };
-		2CB39D2722A2508D00E2612B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB39D2522A2508D00E2612B /* LaunchScreen.storyboard */; };
+		2C8E0C3B22A3BDC1000B0447 /* YJUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E0C3122A3BDC1000B0447 /* YJUserInfoVC.m */; };
+		2C8E0C3C22A3BDC1000B0447 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E0C3522A3BDC1000B0447 /* MainTabBarController.m */; };
+		2C8E0C3D22A3BDC1000B0447 /* YJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E0C3722A3BDC1000B0447 /* YJNavigationController.m */; };
+		2C8E0C3E22A3BDC1000B0447 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E0C3922A3BDC1000B0447 /* YJTabBar.m */; };
+		2C8E0C4422A3BDF5000B0447 /* YJApiUrlConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E0C4122A3BDF4000B0447 /* YJApiUrlConst.m */; };
+		2C8E0C4522A3BDF5000B0447 /* YJNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E0C4322A3BDF4000B0447 /* YJNetworkTool.m */; };
 		2CB39D2A22A2508D00E2612B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB39D2922A2508D00E2612B /* main.m */; };
+		2CB39D3522A26AB900E2612B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB39D3222A26AB900E2612B /* AppDelegate.m */; };
+		2CB39D3622A26AB900E2612B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB39D3422A26AB900E2612B /* Assets.xcassets */; };
 		74C9104A12C7D079B9FA4AEC /* libPods-douyinDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BD3E8DE3FDBA765F3CC3C2 /* libPods-douyinDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C8E0C3022A3BDC0000B0447 /* YJUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJUserInfoVC.h; sourceTree = "<group>"; };
+		2C8E0C3122A3BDC1000B0447 /* YJUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJUserInfoVC.m; sourceTree = "<group>"; };
+		2C8E0C3422A3BDC1000B0447 /* YJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNavigationController.h; sourceTree = "<group>"; };
+		2C8E0C3522A3BDC1000B0447 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		2C8E0C3622A3BDC1000B0447 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		2C8E0C3722A3BDC1000B0447 /* YJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNavigationController.m; sourceTree = "<group>"; };
+		2C8E0C3922A3BDC1000B0447 /* YJTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTabBar.m; sourceTree = "<group>"; };
+		2C8E0C3A22A3BDC1000B0447 /* YJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTabBar.h; sourceTree = "<group>"; };
+		2C8E0C4022A3BDF4000B0447 /* YJNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNetworkTool.h; sourceTree = "<group>"; };
+		2C8E0C4122A3BDF4000B0447 /* YJApiUrlConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJApiUrlConst.m; sourceTree = "<group>"; };
+		2C8E0C4222A3BDF4000B0447 /* YJApiUrlConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJApiUrlConst.h; sourceTree = "<group>"; };
+		2C8E0C4322A3BDF4000B0447 /* YJNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNetworkTool.m; sourceTree = "<group>"; };
+		2C8E0C4622A3BE78000B0447 /* YJMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJMacros.h; sourceTree = "<group>"; };
 		2CB39D1722A2507000E2612B /* douyinDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyinDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CB39D1A22A2507000E2612B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2CB39D1B22A2507000E2612B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CB39D1D22A2507000E2612B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CB39D1E22A2507000E2612B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2CB39D2122A2507000E2612B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2CB39D2322A2508D00E2612B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2CB39D2622A2508D00E2612B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB39D2822A2508D00E2612B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB39D2922A2508D00E2612B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CB39D3122A26AB900E2612B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CB39D3222A26AB900E2612B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CB39D3422A26AB900E2612B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CB39D4422A2733500E2612B /* douyinDome.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = douyinDome.pch; sourceTree = "<group>"; };
+		2CB39D5622A27C8F00E2612B /* YJColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJColorHeader.h; sourceTree = "<group>"; };
 		5725DA71B4A87954C8604699 /* Pods-douyinDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyinDemo.release.xcconfig"; path = "Target Support Files/Pods-douyinDemo/Pods-douyinDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8E2D601CEB41C76D09A2DD45 /* Pods-douyinDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyinDemo.debug.xcconfig"; path = "Target Support Files/Pods-douyinDemo/Pods-douyinDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B3BD3E8DE3FDBA765F3CC3C2 /* libPods-douyinDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douyinDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8E0C2D22A3BDC0000B0447 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C2E22A3BDC0000B0447 /* User */,
+				2C8E0C3222A3BDC1000B0447 /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2C8E0C2E22A3BDC0000B0447 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C2F22A3BDC0000B0447 /* Controller */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2C8E0C2F22A3BDC0000B0447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C3022A3BDC0000B0447 /* YJUserInfoVC.h */,
+				2C8E0C3122A3BDC1000B0447 /* YJUserInfoVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C8E0C3222A3BDC1000B0447 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C3322A3BDC1000B0447 /* Controller */,
+				2C8E0C3822A3BDC1000B0447 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2C8E0C3322A3BDC1000B0447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C3422A3BDC1000B0447 /* YJNavigationController.h */,
+				2C8E0C3522A3BDC1000B0447 /* MainTabBarController.m */,
+				2C8E0C3622A3BDC1000B0447 /* MainTabBarController.h */,
+				2C8E0C3722A3BDC1000B0447 /* YJNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C8E0C3822A3BDC1000B0447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C3922A3BDC1000B0447 /* YJTabBar.m */,
+				2C8E0C3A22A3BDC1000B0447 /* YJTabBar.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C8E0C3F22A3BDF4000B0447 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E0C4022A3BDF4000B0447 /* YJNetworkTool.h */,
+				2C8E0C4122A3BDF4000B0447 /* YJApiUrlConst.m */,
+				2C8E0C4222A3BDF4000B0447 /* YJApiUrlConst.h */,
+				2C8E0C4322A3BDF4000B0447 /* YJNetworkTool.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		2CB39D0E22A2506F00E2612B = {
 			isa = PBXGroup;
 			children = (
@@ -65,17 +145,42 @@
 		2CB39D1922A2507000E2612B /* douyinDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2CB39D1A22A2507000E2612B /* AppDelegate.h */,
-				2CB39D1B22A2507000E2612B /* AppDelegate.m */,
-				2CB39D1D22A2507000E2612B /* ViewController.h */,
-				2CB39D1E22A2507000E2612B /* ViewController.m */,
-				2CB39D2022A2507000E2612B /* Main.storyboard */,
-				2CB39D2322A2508D00E2612B /* Assets.xcassets */,
-				2CB39D2522A2508D00E2612B /* LaunchScreen.storyboard */,
+				2C8E0C2D22A3BDC0000B0447 /* Controllers */,
+				2C8E0C3F22A3BDF4000B0447 /* Network */,
+				2CB39D3022A26AB900E2612B /* Other */,
 				2CB39D2822A2508D00E2612B /* Info.plist */,
 				2CB39D2922A2508D00E2612B /* main.m */,
 			);
 			path = douyinDemo;
+			sourceTree = "<group>";
+		};
+		2CB39D3022A26AB900E2612B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2CB39D5522A2798200E2612B /* Color */,
+				2CB39D3322A26AB900E2612B /* Resource */,
+				2CB39D3122A26AB900E2612B /* AppDelegate.h */,
+				2CB39D3222A26AB900E2612B /* AppDelegate.m */,
+				2C8E0C4622A3BE78000B0447 /* YJMacros.h */,
+				2CB39D4422A2733500E2612B /* douyinDome.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2CB39D3322A26AB900E2612B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2CB39D3422A26AB900E2612B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2CB39D5522A2798200E2612B /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				2CB39D5622A27C8F00E2612B /* YJColorHeader.h */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		7F6F3558ADF36CBEF8079FD1 /* Frameworks */ = {
@@ -124,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = YJ;
+				ORGANIZATIONNAME = YJExpand;
 				TargetAttributes = {
 					2CB39D1622A2507000E2612B = {
 						CreatedOnToolsVersion = 10.1;
@@ -154,9 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB39D2722A2508D00E2612B /* LaunchScreen.storyboard in Resources */,
-				2CB39D2422A2508D00E2612B /* Assets.xcassets in Resources */,
-				2CB39D2222A2507000E2612B /* Main.storyboard in Resources */,
+				2CB39D3622A26AB900E2612B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,32 +317,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB39D1F22A2507000E2612B /* ViewController.m in Sources */,
 				2CB39D2A22A2508D00E2612B /* main.m in Sources */,
-				2CB39D1C22A2507000E2612B /* AppDelegate.m in Sources */,
+				2C8E0C3C22A3BDC1000B0447 /* MainTabBarController.m in Sources */,
+				2CB39D3522A26AB900E2612B /* AppDelegate.m in Sources */,
+				2C8E0C3E22A3BDC1000B0447 /* YJTabBar.m in Sources */,
+				2C8E0C3B22A3BDC1000B0447 /* YJUserInfoVC.m in Sources */,
+				2C8E0C4522A3BDF5000B0447 /* YJNetworkTool.m in Sources */,
+				2C8E0C4422A3BDF5000B0447 /* YJApiUrlConst.m in Sources */,
+				2C8E0C3D22A3BDC1000B0447 /* YJNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2CB39D2022A2507000E2612B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CB39D2122A2507000E2612B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2CB39D2522A2508D00E2612B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CB39D2622A2508D00E2612B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2CB39D2B22A2508D00E2612B /* Debug */ = {
@@ -359,7 +448,9 @@
 			baseConfigurationReference = 8E2D601CEB41C76D09A2DD45 /* Pods-douyinDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = douyinDemo/Other/douyinDome.pch;
 				INFOPLIST_FILE = douyinDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -377,7 +468,9 @@
 			baseConfigurationReference = 5725DA71B4A87954C8604699 /* Pods-douyinDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = douyinDemo/Other/douyinDome.pch;
 				INFOPLIST_FILE = douyinDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
