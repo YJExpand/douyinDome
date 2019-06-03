@@ -10,7 +10,12 @@
 #define douyinDome_pch
 
 #import "YJMacros.h"
-
 #import "YJColorHeader.h"
 
+#import "UIView+YJViewFrame.h"
+#import "UILabel+YJLabel.h"
+
+#import <Masonry.h>
+#import <UIImageView+WebCache.h>
+#import <MJExtension/MJExtension.h>
 #endif /* douyinDome_pch */

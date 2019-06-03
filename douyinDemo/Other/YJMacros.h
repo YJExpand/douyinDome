@@ -47,4 +47,13 @@
 /** 用户偏好*/
 #define YJUserDefaults [NSUserDefaults standardUserDefaults]
 
+
+///NSLog
+#ifdef DEBUG
+#define YJLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define YJLog(...)
+#endif
+
+
 #endif /* YJMacros_h */

@@ -14,31 +14,47 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - SDWebImage (4.4.5):
     - SDWebImage/Core (= 4.4.5)
   - SDWebImage/Core (4.4.5)
   - SVProgressHUD (2.2.5)
+  - ZFPlayer (3.2.4):
+    - ZFPlayer/Core (= 3.2.4)
+  - ZFPlayer/AVPlayer (3.2.4):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.2.4):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.2.4)
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - MJExtension
   - SDWebImage
   - SVProgressHUD
+  - ZFPlayer (~> 3.0)
+  - ZFPlayer/AVPlayer (~> 3.0)
+  - ZFPlayer/ControlView (~> 3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Masonry
     - MJExtension
     - SDWebImage
     - SVProgressHUD
+    - ZFPlayer
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  ZFPlayer: 18ebb005956c122d5ef4ebbf7aa1024e9be79ad7
 
-PODFILE CHECKSUM: 8dc556498000319bbfd4caa5aca1523d29ebbaf6
+PODFILE CHECKSUM: 40454459da9a21fe851b7fda1e8760b485be566f
 
 COCOAPODS: 1.6.0.rc.2

@@ -9,7 +9,6 @@
 #import "MainTabBarController.h"
 #import "YJNavigationController.h"
 #import "YJTabBar.h"
-#import "YJUserInfoVC.h"
 
 @interface MainTabBarController ()<YJTabBarDelegate>
 @property(nonatomic,strong) YJTabBar *tabbar;
@@ -31,7 +30,7 @@
 #pragma mark UI
 - (void)setupViewControllers
 {
-    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@"YJUserInfoVC",@"YJUserInfoVC",@"YJUserInfoVC",@"YJUserInfoVC"]];
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@"YJHomeVC",@"YJUserInfoVC",@"YJUserInfoVC",@"YJUserInfoVC"]];
     for (int i = 0 ; i<arr.count; i++) {
         NSString *vcName = arr[i];
         UIViewController *vc = [[NSClassFromString(vcName) alloc]init];

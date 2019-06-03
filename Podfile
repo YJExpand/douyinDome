@@ -11,5 +11,9 @@ target 'douyinDemo' do
   pod 'SDWebImage'
   pod 'MJExtension'
   pod 'SVProgressHUD'
-
+  pod 'Masonry'
+  pod 'ZFPlayer', '~> 3.0'
+  pod 'ZFPlayer/ControlView', '~> 3.0'
+  pod 'ZFPlayer/AVPlayer', '~> 3.0'
+  
 end

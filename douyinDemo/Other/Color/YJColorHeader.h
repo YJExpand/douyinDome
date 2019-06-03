@@ -29,3 +29,9 @@
 
 /// 选中颜色
 #define YJColor_Select YJRGBColor(251, 251, 251)
+
+/// 导航栏背景色
+#define YJColor_NavigationBarBG YJColorHex(0x2B2841)
+
+///随机颜色
+#define YJRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0f]

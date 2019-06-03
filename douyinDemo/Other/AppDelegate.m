@@ -18,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self setupInit];
+    
+    [self setupRootViewController];
+    
+    return YES;
+}
+
+
+#pragma mark other
+- (void)setupInit
+{
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (void)setupRootViewController
+{
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = YJColor_BG;
@@ -28,8 +44,6 @@
     self.window.layer.masksToBounds = YES;
     
     [self.window makeKeyAndVisible];
-    return YES;
 }
-
 
 @end
