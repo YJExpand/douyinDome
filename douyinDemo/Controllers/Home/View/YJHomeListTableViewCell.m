@@ -7,6 +7,12 @@
 //
 
 #import "YJHomeListTableViewCell.h"
+#import "YJHomeBtnView.h"
+
+@interface YJHomeListTableViewCell()
+
+@property (nonatomic,strong) YJHomeBtnView *btnView;
+@end
 
 @implementation YJHomeListTableViewCell
 
@@ -30,16 +36,18 @@
     return self;
 }
 
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{ }
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated{ }
 #pragma mark - UI
 - (void)setupUI
 {
     //顶部图片
     [self.contentView addSubview:self.bgImageView];
     
-//    [self.contentView addSubview:self.btnView];
-//    [self.btnView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.contentView);
-//    }];
+    [self.contentView addSubview:self.btnView];
+    [self.btnView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.contentView);
+    }];
 }
 
 
@@ -48,6 +56,7 @@
 {
     [self.bgImageView sd_setImageWithURL:[NSURL URLWithString:[aweme.video.origin_cover.url_list firstObject]]];
 
+    [self.btnView setValueWithAwemeModel:aweme];
 }
 
 #pragma mark - getting
@@ -59,5 +68,12 @@
         _bgImageView.tag = 100;
     }
     return _bgImageView;
+}
+-(YJHomeBtnView *)btnView{
+    if(!_btnView)
+    {
+        _btnView = [[YJHomeBtnView alloc]init];
+    }
+    return _btnView;
 }
 @end

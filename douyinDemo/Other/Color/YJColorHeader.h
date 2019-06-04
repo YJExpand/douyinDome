@@ -27,8 +27,8 @@
 /// 普通颜色
 #define YJColor_Normal YJRGBColor(144, 143, 149)
 
-/// 选中颜色
-#define YJColor_Select YJRGBColor(251, 251, 251)
+/// 主题白色
+#define YJColor_Theme_White YJRGBColor(251, 251, 251)
 
 /// 导航栏背景色
 #define YJColor_NavigationBarBG YJColorHex(0x2B2841)

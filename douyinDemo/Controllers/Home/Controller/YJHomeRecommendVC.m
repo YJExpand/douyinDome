@@ -29,10 +29,12 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    self.player.statusBarHidden = NO;
     [self.player.currentPlayerManager pause];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.player.statusBarHidden = YES;
     [self.player.currentPlayerManager play];
 }
 
@@ -66,7 +68,7 @@
 #pragma mark - loadData
 - (void)loadData
 {
-    self.urls = @[].mutableCopy;
+    self.urls = [NSMutableArray array];
     [YJHomeApiManage getAwemeFeedTaskSuccess:^(id obj) {
         YJAwemeFeedModel *feedModel = (YJAwemeFeedModel *)obj;
         self.dataSource = [NSMutableArray arrayWithArray:feedModel.aweme_list];
@@ -85,6 +87,25 @@
     }];
 }
 
+- (void)loadMoreData
+{
+    [YJHomeApiManage getAwemeFeedTaskSuccess:^(id  _Nonnull obj) {
+        YJAwemeFeedModel *feedModel = (YJAwemeFeedModel *)obj;
+        [self.dataSource addObjectsFromArray:feedModel.aweme_list];
+        
+        for (YJAweme *aweme in feedModel.aweme_list){
+            NSString *URLString = [[aweme.video.play_addr.url_list firstObject] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+            NSURL *url = [NSURL URLWithString:URLString];
+            [self.urls addObject:url];
+        }
+        
+        self.player.assetURLs = self.urls;
+        self.tableView.dataArray = self.dataSource;
+        [self.tableView reloadData];
+    } failed:^(id  _Nonnull obj) {
+        YJLog(@"error :%@",obj)
+    }];
+}
 #pragma mark - action
 - (void)refreshTableView{
     
@@ -99,16 +120,24 @@
 }
 
 /// play the video
-- (void)playTheVideoAtIndexPath:(NSIndexPath *)indexPath scrollToTop:(BOOL)scrollToTop {
+- (void)playTheVideoAtIndexPath:(NSIndexPath *)indexPath scrollToTop:(BOOL)scrollToTop
+{
+    
+    YJAweme *data = self.dataSource[indexPath.row];
+    
+    if ([self.player.assetURL.absoluteString isEqualToString:[data.video.play_addr.url_list firstObject]]) {
+        return;
+    }
     [self.player.currentPlayerManager playerPrepareToPlay];
     [self.player playTheIndexPath:indexPath scrollToTop:scrollToTop];
     
     //    [self.controlView resetControlView];
-    YJAweme *data = self.dataSource[indexPath.row];
+    
     //    [self.controlView showCoverViewWithUrl:[data.video.originCover.urlList firstObject]];
     [self.controlView showTitle:data.title coverURLString:[data.video.origin_cover.url_list firstObject] fullScreenMode:ZFFullScreenModeLandscape];
     
 }
+
 
 #pragma mark - getting
 - (YJHomeListTableView *)tableView
@@ -120,9 +149,8 @@
         _tableView.zf_scrollViewDidStopScrollCallback = ^(NSIndexPath * _Nonnull indexPath) {
             if (indexPath.row == ws.dataSource.count-1) {
                 /// 加载下一页数据
-                [ws loadData];
-                ws.player.assetURLs = ws.urls;
-                [ws.tableView reloadData];
+                [ws loadMoreData];
+                
             }
             [ws playTheVideoAtIndexPath:indexPath scrollToTop:NO];
         };

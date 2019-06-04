@@ -8,6 +8,7 @@
 
 #import "YJHomeVC.h"
 #import "YJHomeRecommendVC.h"
+#import "MainTabBarController.h"
 
 @interface YJHomeVC ()<UIScrollViewDelegate>
 /// 推荐vc
@@ -26,11 +27,17 @@
     [self setupUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    MainTabBarController *tabbarVC = (MainTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    [tabbarVC setTabbarAlpha:YES];
+}
 #pragma mark - UI
 - (void)setupNav
 {
     /// 1.0.0 只显示推荐，后续添加关注
-    UILabel *titleLB = [[UILabel alloc] initWithText:@"推荐" textColor:YJColor_Select fontSize:15];
+    UILabel *titleLB = [[UILabel alloc] initWithText:@"推荐" textColor:YJColor_Theme_White fontSize:15];
     [self.nav addSubview:titleLB];
     [titleLB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.centerX.mas_equalTo(self.nav);

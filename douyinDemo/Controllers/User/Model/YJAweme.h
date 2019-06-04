@@ -111,10 +111,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YJStatistic : NSObject
 
 @property (nonatomic, strong) NSString * awemeId;
-@property (nonatomic, assign) NSInteger commentCount;
-@property (nonatomic, assign) NSInteger diggCount;
-@property (nonatomic, assign) NSInteger playCount;
-@property (nonatomic, assign) NSInteger shareCount;
+@property (nonatomic, assign) NSInteger comment_count;
+@property (nonatomic, assign) NSInteger digg_count;
+@property (nonatomic, assign) NSInteger play_count;
+@property (nonatomic, assign) NSInteger share_count;
 @end
 
 @interface YJDescendant : NSObject

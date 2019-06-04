@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3967A222A645D1005DD345 /* YJHomeBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3967A122A645D1005DD345 /* YJHomeBtnView.m */; };
+		2C3967A522A6462B005DD345 /* YJHomeBtnItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3967A422A6462B005DD345 /* YJHomeBtnItem.m */; };
+		2C3967A822A64906005DD345 /* YJShortVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3967A722A64906005DD345 /* YJShortVideoModel.m */; };
 		2C4603A822A4C83F004A7C27 /* YJBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4603A722A4C83F004A7C27 /* YJBaseTableViewCell.m */; };
 		2C4603AB22A4D7FE004A7C27 /* YJHomeListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4603AA22A4D7FE004A7C27 /* YJHomeListTableView.m */; };
 		2C4603AE22A4D948004A7C27 /* YJHomeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4603AD22A4D948004A7C27 /* YJHomeListTableViewCell.m */; };
@@ -42,6 +45,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3967A022A645D1005DD345 /* YJHomeBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHomeBtnView.h; sourceTree = "<group>"; };
+		2C3967A122A645D1005DD345 /* YJHomeBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHomeBtnView.m; sourceTree = "<group>"; };
+		2C3967A322A6462B005DD345 /* YJHomeBtnItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHomeBtnItem.h; sourceTree = "<group>"; };
+		2C3967A422A6462B005DD345 /* YJHomeBtnItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHomeBtnItem.m; sourceTree = "<group>"; };
+		2C3967A622A64906005DD345 /* YJShortVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJShortVideoModel.h; sourceTree = "<group>"; };
+		2C3967A722A64906005DD345 /* YJShortVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJShortVideoModel.m; sourceTree = "<group>"; };
 		2C4603A622A4C83F004A7C27 /* YJBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaseTableViewCell.h; sourceTree = "<group>"; };
 		2C4603A722A4C83F004A7C27 /* YJBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBaseTableViewCell.m; sourceTree = "<group>"; };
 		2C4603A922A4D7FE004A7C27 /* YJHomeListTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHomeListTableView.h; sourceTree = "<group>"; };
@@ -268,6 +277,8 @@
 				2C4603CA22A50158004A7C27 /* YJVideo.m */,
 				2C4603CC22A5025A004A7C27 /* YJMusic.h */,
 				2C4603CD22A5025A004A7C27 /* YJMusic.m */,
+				2C3967A622A64906005DD345 /* YJShortVideoModel.h */,
+				2C3967A722A64906005DD345 /* YJShortVideoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +292,10 @@
 				2C4603AA22A4D7FE004A7C27 /* YJHomeListTableView.m */,
 				2C4603AC22A4D948004A7C27 /* YJHomeListTableViewCell.h */,
 				2C4603AD22A4D948004A7C27 /* YJHomeListTableViewCell.m */,
+				2C3967A322A6462B005DD345 /* YJHomeBtnItem.h */,
+				2C3967A422A6462B005DD345 /* YJHomeBtnItem.m */,
+				2C3967A022A645D1005DD345 /* YJHomeBtnView.h */,
+				2C3967A122A645D1005DD345 /* YJHomeBtnView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -533,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8E0C5B22A3CCFA000B0447 /* UILabel+YJLabel.m in Sources */,
+				2C3967A222A645D1005DD345 /* YJHomeBtnView.m in Sources */,
 				2C4603B522A4F02C004A7C27 /* YJHttpHandler.m in Sources */,
 				2C8E0C6122A3D2BD000B0447 /* YJHomeNearbyVC.m in Sources */,
 				2C4603C522A4FDD5004A7C27 /* YJUserModel.m in Sources */,
@@ -540,6 +556,7 @@
 				2C4603AB22A4D7FE004A7C27 /* YJHomeListTableView.m in Sources */,
 				2C4603CB22A50158004A7C27 /* YJVideo.m in Sources */,
 				2C8E0C5422A3C30E000B0447 /* YJBaseVC.m in Sources */,
+				2C3967A822A64906005DD345 /* YJShortVideoModel.m in Sources */,
 				2C4603AE22A4D948004A7C27 /* YJHomeListTableViewCell.m in Sources */,
 				2C8E0C5122A3C1A6000B0447 /* YJHomeVC.m in Sources */,
 				2C4603BC22A4FA5C004A7C27 /* YJAwemeFeedModel.m in Sources */,
@@ -549,6 +566,7 @@
 				2C4603A822A4C83F004A7C27 /* YJBaseTableViewCell.m in Sources */,
 				2C8E0C6422A3D316000B0447 /* YJHomeTitleView.m in Sources */,
 				2C4603B222A4EC46004A7C27 /* YJHomeApiManage.m in Sources */,
+				2C3967A522A6462B005DD345 /* YJHomeBtnItem.m in Sources */,
 				2C4603CE22A5025A004A7C27 /* YJMusic.m in Sources */,
 				2C4603C822A5003E004A7C27 /* YJUser.m in Sources */,
 				2C4603BF22A4FB3E004A7C27 /* YJAweme.m in Sources */,
@@ -685,7 +703,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J84CN5W8WH;
 				GCC_PREFIX_HEADER = douyinDemo/Other/douyinDome.pch;
 				INFOPLIST_FILE = douyinDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -695,6 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YJExpand.douyinDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -705,7 +726,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J84CN5W8WH;
 				GCC_PREFIX_HEADER = douyinDemo/Other/douyinDome.pch;
 				INFOPLIST_FILE = douyinDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -715,6 +738,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YJExpand.douyinDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

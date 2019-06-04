@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) YJActivity * activity;
 @property (nonatomic, assign) NSInteger appleAccount;
 @property (nonatomic, assign) NSInteger authorityStatus;
-@property (nonatomic, strong) YJAvatarLarger * avatarLarger;
+@property (nonatomic, strong) YJAvatarLarger * avatar_larger;
 @property (nonatomic, strong) YJAvatarLarger * avatarMedium;
 @property (nonatomic, strong) YJAvatarLarger * avatarThumb;
 @property (nonatomic, assign) NSInteger awemeCount;

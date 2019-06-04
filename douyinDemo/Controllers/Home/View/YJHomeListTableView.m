@@ -7,7 +7,11 @@
 //
 
 #import "YJHomeListTableView.h"
+#import <ZFPlayer/ZFPlayer.h>
 
+@interface YJHomeListTableView()
+
+@end
 @implementation YJHomeListTableView
 
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
@@ -18,6 +22,11 @@
         self.delegate = self;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         self.pagingEnabled = YES;
+        self.scrollsToTop = YES;
+        self.estimatedSectionHeaderHeight = 0;
+        self.estimatedSectionFooterHeight = 0;
+        self.estimatedRowHeight = 0;
+        self.opaque = YES;
         [self setupUI];
         
     }
@@ -31,8 +40,13 @@
 }
 
 #pragma mark - <UITabelViewDataSource>
+- (NSInteger)numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    YJLog(@"来了 ： %zd",self.dataArray.count)
     return self.dataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -49,4 +63,12 @@
 {
     return kScreenH;
 }
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger row = scrollView.contentOffset.y / kScreenH;
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+    self.zf_scrollViewDidStopScrollCallback(indexPath);
+}
+
 @end
